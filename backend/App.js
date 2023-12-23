@@ -17,7 +17,4 @@ app.use(cors())
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
-//Routes
-app.use('/api/v1/income',IncomeRouter)
-app.use('/api/v1/expense',ExpenseRouter)
-app.use('/api/v1/savings',SavingsRouter)
+app.get('/api/v1',IncomeRouter)
